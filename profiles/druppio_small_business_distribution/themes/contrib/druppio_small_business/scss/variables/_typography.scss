@@ -1,0 +1,17 @@
+//== fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,700,700i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+$raleway: 'Raleway', sans-serif;
+$body-font: $raleway;
+$header-font: $raleway;
+
+//== heading sizes
+
+$size-font: 16px;
+$size-h1: 140px;
+$size-h2: 20px;
+$size-h3: 18px;
+$size-h4: 16px;
+$size-h5: 14px;
+$size-h6: 12px;
+$size-breadcrumb: 13px;

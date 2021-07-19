@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_email
+    - field.field.contact_message.feedback.field_name
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 0
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 6
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  copy: true
+  mail: true
+  name: true
+  preview: true
+  subject: true

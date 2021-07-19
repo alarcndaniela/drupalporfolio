@@ -1,0 +1,53 @@
+@import "../libraries/normalize-libsass/normalize";
+@import "../libraries/compass-breakpoint/stylesheets/breakpoint";
+@import "../libraries/susy/sass/susy";
+
+@import "scss/variables/_colors.scss";
+@import "scss/variables/_grid.scss";
+@import "scss/variables/_typography.scss";
+@import "scss/variables/_base-mixins.scss";
+
+@import "scss/admin-tools/_admin-toolbar.scss";
+@import "scss/admin-tools/_region-demo.scss";
+@import "scss/admin-tools/_tabs.scss";
+@import "scss/admin-tools/_typography.scss";
+
+@import "scss/elements/_forms.scss";
+@import "scss/elements/_html-elements.scss";
+@import "scss/elements/_main-menus.scss";
+@import "scss/elements/_messages.scss";
+@import "scss/elements/_pager.scss";
+@import "scss/elements/_tables.scss";
+
+
+@import "scss/components/_blocks.scss";
+@import "scss/components/_breadcrumb.scss";
+@import "scss/components/_header.scss";
+@import "scss/components/_footer.scss";
+@import "scss/components/_full-node.scss";
+@import "scss/components/_header.scss";
+@import "scss/components/_icons.scss";
+@import "scss/components/_language-switcher.scss";
+@import "scss/components/_search.scss";
+@import "scss/components/_sections.scss";
+@import "scss/components/_submitted.scss";
+@import "scss/components/_user.scss";
+@import "scss/components/_views.scss";
+
+
+
+
+body {
+  background-color:$color-bg;
+	&:not(.path-frontpage){
+		#content{
+			min-height: calc(100vh - 129px);
+		}
+	}
+	&.path-user{
+		#content{
+			min-height: calc(100vh - 166px);
+		}
+	}
+}
+

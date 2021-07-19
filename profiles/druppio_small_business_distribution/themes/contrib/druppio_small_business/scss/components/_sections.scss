@@ -1,0 +1,68 @@
+.path-frontpage {
+  #section_first,
+  #section_first .block-title,
+  #section_first .block-content {
+    background-color: $color-bg-section-first;
+  }
+  #section_second,
+  #section_second .block-title,
+  #section_second .block-content {
+    background-color: $color-bg-section-second;
+  }
+  #section_third,
+  #section_third .block-title,
+  #section_third .block-content {
+    background-color: $color-bg-section-third;
+  }
+  //Clients
+  #section_fourth,
+  #section_fourth .block-title,
+  #section_fourth .block-content {
+    background-color: $color-bg-section-fourth;
+    .field,
+    .views-field {
+      color: white;
+    }
+  }
+  #section_first{
+    background-color: $color-red !important;
+  }  
+}
+
+//contact
+#section_fifth,
+#section_fifth .block-title,
+#section_fifth .block-content {
+  background-color: $color-bg-section-fifth;
+}
+
+[id*="section_"] {
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto 100%;
+  position: relative;
+  // div[class*="separator"] {
+  //   position: absolute;
+  //   z-index: 5;
+  //   left: 0;
+  //   right: 0;
+  //   max-width: 100%;
+  //   display: none;
+  //   @include breakpoint($narrow) {
+  //     display: inherit;
+  //   }
+  //   svg {
+  //     max-width: 100%;
+  //     height: auto;
+  //     @include breakpoint($wide) {
+  //       height: inherit;
+  //     }
+  //     #primary {
+  //       fill: $color-primary;
+  //     }
+  //     #secondary {
+  //       fill: $color-secondary;
+  //     }
+  //   }
+  // }
+}
